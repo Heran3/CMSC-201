@@ -1,22 +1,10 @@
-package _student;
+
 
 
 import java.io.IOException;
-
-
-
-
 import javafx.application.Application;
-//import javafx.application.Application;
-import javafx.application.Platform;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Tooltip;
-import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.Pane;
-import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
 
@@ -32,12 +20,14 @@ public class FXDriver extends Application {
     }
 
     @Override
-    public void start(Stage stage) throws Exception {
-        //call the main scene which is a BorderPane
+    public void start(Stage stage) throws IOException {
+        //student Task #1:
+        //  instantiate the FXMainPane, name it root
         FXMainPane root = new FXMainPane();
-        stage.setScene(new Scene(root, 600, 350));
-        // Set stage title and show the stage.
-        stage.setTitle("Cybersecurity Encryption and Decryption");
+        //  set the scene to hold root
+        //set stage title
+        stage.setTitle("Hello World GUI");
+        //display the stage
         stage.show();
 
     }
