@@ -1,4 +1,3 @@
-
 import java.util.ArrayList;
 
 public class GradeBook
@@ -80,31 +79,18 @@ public class GradeBook
             return sum() - minimum();
     }
 
-    /**
-     * returns the length of the array
-     * @return
-     */
-    public int getScoresSize() {
-        // finding the num elements in the array scores
-        return scores.length;
+    public int getScoreSize(){
+        return scoresSize;
     }
 
-
-    public String toString(){
-        String result = "";
-
-        // loop thourogh the array and store each element to result
-        for (int i = 0; i < getScoresSize(); i++){
-            if(scores[i] != 0)
-                result += scores[i] + " ";
+   public String toString(){
+        // declare a string variable to store your result
+       StringBuilder cake = new StringBuilder();
+        for(int i = 0; i < scores.length; i++) {
+            // put the content of the array at i into the variable you declared
+            cake.append(scores[i]);
+            cake.append(" ");
         }
-
-        return result;
-
+        return cake.toString();
     }
-
-
 }
-
-
-
